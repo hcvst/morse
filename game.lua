@@ -99,6 +99,8 @@ function scene:createScene( event )
 end
 
 function createAlphabetLookupTable()
+        -- the table is used to map morse sequences to letters in the ALPHABET
+        -- for example ._-_. to the letter R where _ represents a pause between dits and dahs 
 	for k,v in pairs(ALPHABET) do
 		local newKey = ""
 		for c in v:gmatch('.') do
